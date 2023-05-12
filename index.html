@@ -1,25 +1,52 @@
-<div id="myDIV" class="header">
+<!DOCTYPE html>
 
-  <h2>My To Do List</h2>
+<html>
 
-  <input type="text" id="myInput" placeholder="Title...">
+  <head>
 
-  <span onclick="newElement()" class="addBtn">Add</span>
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
 
-</div>
+    <title>TODO web app</title>
 
-<ul id="myUL">
+    <link rel="stylesheet" href="style.css">
 
-  <li>Hit the gym</li>
+  </head>
 
-  <li class="checked">Pay bills</li>
+  <body>
 
-  <li>Meet George</li>
+    <div class="container">
 
-  <li>Buy eggs</li>
+        <div class="todo-app">
 
-  <li>Read a book</li>
+            <h2>To-Do list <img src="notepad image.jpg"></h2>
 
-  <li>Organize office</li>
+            <div class="row">
 
-</ul>
+                <input type="text" id="input-box" placeholder="Add your text">
+
+                <button onclick="addTask()">Add</button>
+
+            </div>
+
+            <ul id="list-container">
+
+               <!-- <li class="checked">Task 1</li>
+
+                <li>Task 2</li>
+
+                <li>Task 3</li>-->
+
+            </ul>
+
+        </div>
+
+      
+
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
+
